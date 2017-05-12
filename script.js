@@ -10,6 +10,14 @@ function updateTimer(deadline){
 }
 
 
+function animateClock(span){
+  span.className = "turn";
+  setTimeout(function(){
+    span.className = "";
+  },700);
+}
+
+
 function startTimer(id, deadline){
   var timerInterval = setInterval(function(){
     var clock = document.getElementById(id);
